@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>主页</title>
+  <link rel="stylesheet" href="css/mdui.min.css"/>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+  
+    gtag('config', 'UA-88818678-1');
+  </script>
+</head>
+
+<body class="mdui-appbar-with-toolbar mdui-theme-primary-indigo mdui-theme-accent-pink mdui-theme-layout-dark mdui-loaded">
+  <header class="mdui-appbar mdui-appbar-fixed">
+    <div class="mdui-toolbar mdui-color-theme">
+      <span class="mdui-btn mdui-btn-icon mdui-ripple mdui-ripple-white" mdui-drawer="{target: '#function-choose', swipe: true}"><i class="mdui-icon material-icons">menu</i></span>
+    </div>
+	</header>
+  
+	<div class="mdui-container" style="margin-bottom: 5px">
+      <div id="tab-uid" class="mdui-col-sm-6 mdui-col-md-4">
+          <div class="mdui-textfield mdui-textfield-floating-label mdui-textfield-has-bottom">
+              <label class="mdui-textfield-label">
+                  请输入UID
+              </label>
+              <input class="mdui-textfield-input" id="uid" type="number" required>
+					</div>
+			</div>
+	</div>
+	<div class="mdui-container" style="margin-bottom: 80px">
+			<button class="mdui-btn mdui-btn-raised mdui-ripple mdui-color-theme-accent" id="input-but" onclick=javascrtpt:jump()>GO!</button>
+			<script>
+				function jump(){
+					document.location.href=`http://particle.51vip.biz:8012/MDUI-Monitor/UPMonitor/#${document.getElementById('uid').value}`;
+				}
+			</script>
+
+	</div>
+<div class ="mdui-drawer mdui-drawer-close" id ="function-choose">
+  <div class="mdui-list" mdui-collapse="{accordion: true}" style="margin-bottom: 76px;">
+    <div class="mdui-collapse-item ">
+      <a href="./">
+				<div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
+					<i class="mdui-list-item-icon mdui-icon material-icons">near_me</i>
+					<div class="mdui-list-item-content">主页</div>
+				</div>
+			</a>
+
+      <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
+        <i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-blue">settings</i>
+        <div class="mdui-list-item-content">工具</div>
+        <i class="mdui-collapse-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
+      </div>
+      <div class="mdui-collapse-item-body mdui-list">
+        <a href="./UPMonitor" class="mdui-list-item mdui-ripple ">UP主监测器</a>
+      </div>
+    </div>
+  </div>
+  <a id="anchor-top"></a>
+</div>
+
+<div class="mdui-container" style="margin-bottom: 80px;">
+  <h1 class="doc-title mdui-text-color-theme">关于</h1>
+  <h2 class="doc-title mdui-text-color-theme">简介</h2>
+  <div class="mdui-typo">
+    <p>这大约是当时鹿乃酱快要百万粉时的制作的</p>
+    <p>当时还是一个刚学了几天html的小白</p>
+    <p>不过现在也是啊XD</p>
+  </div>
+  <h2 class="doc-title mdui-text-color-theme">说明</h2>
+  <div class="mdui-typo">
+    <p>
+      本站采用
+      <a href="https://jsonp.afeld.me/" target:"_blank">
+        jsonp
+      </a>
+      来处理来自
+      <a href="https://www.bilibili.com/">bilibili</a>
+      的数据
+    </p>
+  </div>
+</div>
+
+
+
+<script src="js/mdui.min.js"></script>
+</body>
+</html>
