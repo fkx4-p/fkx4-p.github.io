@@ -7,7 +7,7 @@
     const elMid = document.getElementById('mid')
     // 获取用户 id
     let userID = window.location.hash.replace(/^#/, '')
-    let time = window.location.hash.replace(/^$time=/, '')
+    let time = window.location.hash.replace(/^%time=/, '')
     let iden = window.location.hash.replace(/^&=/, '')
     time *= 1000
     if(time <= 60000 && iden != "FFEE_CO"){
