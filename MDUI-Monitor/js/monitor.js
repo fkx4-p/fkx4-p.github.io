@@ -7,12 +7,12 @@
     const elMid = document.getElementById('mid')
     // 获取用户 id
     let userID = window.location.hash.replace(/^#/, '')
-    let cloc = window.location.hash.replace(/^%=/, '')
+    // let cloc = window.location.hash.replace(/^%=/, '')
     let iden = window.location.hash.replace(/^&=/, '')
-    cloc *= 1000
-    if(cloc <= 60000 && iden != "FFEE_CO"){
-      cloc = 60000
-    }
+    // cloc *= 1000
+    // if(cloc <= 60000 && iden != "FFEE_CO"){
+      // cloc = 60000
+    // }
     if(userID.length){
       localStorage.setItem('userID', userID)
     }
