@@ -7,11 +7,11 @@
     const elMid = document.getElementById('mid')
     // 获取用户 id
     let userID = window.location.hash.replace(/^#/, '')
-    let time = window.location.hash.replace(/^%time=/, '')
+    let cloc = window.location.hash.replace(/^%=/, '')
     let iden = window.location.hash.replace(/^&=/, '')
-    time *= 1000
-    if(time <= 60000 && iden != "FFEE_CO"){
-      time = 60000
+    cloc *= 1000
+    if(cloc <= 60000 && iden != "FFEE_CO"){
+      cloc = 60000
     }
     if(userID.length){
       localStorage.setItem('userID', userID)
