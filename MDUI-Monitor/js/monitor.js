@@ -30,7 +30,7 @@
     }
     function returnAvatar(){
       elAvatar.src = json.data.card.face.replace(/^http:/,'https:')
-      return elAvatar
+      return elAvatar.src.toString()
     }
     // 创建数据地址并添加元素
     let elScriptChild
