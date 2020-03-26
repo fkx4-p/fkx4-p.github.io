@@ -6,13 +6,15 @@
     const elName = document.getElementById('name')
     const elMid = document.getElementById('mid')
     // 获取用户 id
-    let userID = window.location.hash.replace(/^#/, '')
-    // let cloc = window.location.hash.replace(/^%=/, '')
-    let iden = window.location.hash.replace(/^&=/, '')
-    // cloc *= 1000
-    // if(cloc <= 60000 && iden != "FFEE_CO"){
-      // cloc = 60000
-    // }
+    const queryString = window.location.search;
+    const urlParams = new URLSearchParams(queryString);
+    let userID = urlParams.get('uid')
+    let cloc = urlParams.get('refresh-time')
+    let iden = urlParams.get('iden')
+    cloc *= 1000
+    if(cloc <= 60000 && iden != "FFEE_CO"){
+      cloc = 60000
+    }
     if(userID.length){
       localStorage.setItem('userID', userID)
     }
@@ -40,7 +42,7 @@
       elScript.removeChild(elScriptChild)
       appendScript()
     }
-    window.setInterval(getData, 60000)
+    window.setInterval(getData, cloc)
     // 页面元素定位
     const resize = ()=>{
       elFans.style.fontSize = document.getElementById('main').clientWidth*0.03+'px'
