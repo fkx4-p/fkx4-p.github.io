@@ -28,6 +28,10 @@
       elName.innerText = json.data.card.name.toLocaleString()
       elAvatar.src = json.data.card.face.replace(/^http:/,'https:')
     }
+    function returnAvatar(){
+      elAvatar.src = json.data.card.face.replace(/^http:/,'https:')
+      return elAvatar
+    }
     // 创建数据地址并添加元素
     let elScriptChild
     const appendScript = ()=>{
