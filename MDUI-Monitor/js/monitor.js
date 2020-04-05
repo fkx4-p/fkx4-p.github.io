@@ -12,8 +12,8 @@
     let cloc = urlParams.get('refresh-time')
     let iden = urlParams.get('iden')
     cloc *= 1000
-    if(cloc <= 60000 && iden != "FFEE_CO"){
-      cloc = 60000
+    if(cloc <= 10000 && iden != "FFEE_CO"){
+      cloc = 10000
     }
     if(userID.length){
       localStorage.setItem('userID', userID)
@@ -35,7 +35,7 @@
     // 创建数据地址并添加元素
     let elScriptChild
     const appendScript = ()=>{
-      const url = "https://jsonp.afeld.me/?callback=showFansCount&url=https%3A%2F%2Fapi.bilibili.com%2Fx%2Fweb-interface%2Fcard%3Fmid%3D"+userID+'&spam='+Number(new Date)
+      const url = "http://renjianji2004041.oicp.net:3000/?callback=showFansCount&url=https%3A%2F%2Fapi.bilibili.com%2Fx%2Fweb-interface%2Fcard%3Fmid%3D"+userID+'&spam='+Number(new Date)
       elScriptChild = document.createElement('script')
       elScriptChild.setAttribute('src', url)
       elScript.appendChild(elScriptChild)
