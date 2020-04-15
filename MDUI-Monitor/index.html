@@ -43,7 +43,7 @@
 			<button class="mdui-btn mdui-btn-raised mdui-ripple mdui-color-theme-accent" id="input-but" onclick=javascrtpt:jump()>GO!</button>
 			<script>
 				function jump(){
-					document.location.href=`./UPMonitor/?uid=${document.getElementById('uid').value == '' ? 1 : uid}&refresh-time=${document.getElementById('refresh-time').value}`;
+					document.location.href=`./UPMonitor/?uid=${document.getElementById('uid').value == '' ? 316381099 : document.getElementById('uid').value}&refresh-time=${document.getElementById('refresh-time').value == '' ? 10 : document.getElementById('refresh-time').value}`;
 				}
 			</script>
 
