@@ -1,153 +1,158 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>主页</title>
-  <link rel="stylesheet" href="css/mdui.min.css"/>
+  <link rel="stylesheet" href="css/mdui.min.css" />
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+    function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
-  
+
     gtag('config', 'UA-88818678-1');
   </script>
 </head>
 
-<body class="mdui-appbar-with-toolbar mdui-theme-primary-indigo mdui-theme-accent-pink mdui-theme-layout-dark mdui-loaded">
+<body
+  class="mdui-appbar-with-toolbar mdui-theme-primary-indigo mdui-theme-accent-pink mdui-theme-layout-dark mdui-loaded">
   <header class="mdui-appbar mdui-appbar-fixed">
     <div class="mdui-toolbar mdui-color-theme">
-      <span class="mdui-btn mdui-btn-icon mdui-ripple mdui-ripple-white" mdui-drawer="{target: '#function-choose', swipe: true}"><i class="mdui-icon material-icons">menu</i></span>
+      <span class="mdui-btn mdui-btn-icon mdui-ripple mdui-ripple-white"
+        mdui-drawer="{target: '#function-choose', swipe: true}"><i class="mdui-icon material-icons">menu</i></span>
     </div>
-	</header>
-  
-	<div class="mdui-container" style="margin-bottom: 5px">
-      <div id="tab-uid" class="mdui-col-sm-6 mdui-col-md-4">
-          <div class="mdui-textfield mdui-textfield-floating-label mdui-textfield-has-bottom">
-              <label class="mdui-textfield-label">
-                  请输入UID
-              </label>
-              <input class="mdui-textfield-input" id="uid" type="number" required>
-					</div>
+  </header>
+
+  <div class="mdui-container" style="margin-bottom: 5px">
+    <div id="tab-uid" class="mdui-col-sm-6 mdui-col-md-4">
+      <div class="mdui-textfield mdui-textfield-floating-label mdui-textfield-has-bottom">
+        <label class="mdui-textfield-label">
+          请输入UID
+        </label>
+        <input class="mdui-textfield-input" id="uid" type="number" required>
       </div>
-      <div id="tab-time" class="mdui-col-sm-6 mdui-col-md-4">
-        <div class="mdui-textfield mdui-textfield-floating-label mdui-textfield-has-bottom">
-            <label class="mdui-textfield-label">
-                请输入刷新时间(秒)
-            </label>
-            <input class="mdui-textfield-input" id="refresh-time" type="number" required>
+    </div>
+    <div id="tab-time" class="mdui-col-sm-6 mdui-col-md-4">
+      <div class="mdui-textfield mdui-textfield-floating-label mdui-textfield-has-bottom">
+        <label class="mdui-textfield-label">
+          请输入刷新时间(秒)
+        </label>
+        <input class="mdui-textfield-input" id="refresh-time" type="number" required>
+      </div>
+    </div>
+  </div>
+  <div class="mdui-container" style="margin-bottom: 80px">
+    <button class="mdui-btn mdui-btn-raised mdui-ripple mdui-color-theme-accent" id="input-but"
+      onclick=javascrtpt:jump()>GO!</button>
+    <script>
+      function jump() {
+        document.location.href = `./UPMonitor/?uid=${document.getElementById('uid').value == '' ? 316381099 : document.getElementById('uid').value}&refresh-time=${document.getElementById('refresh-time').value == '' ? 10 : document.getElementById('refresh-time').value}`;
+      }
+    </script>
+
+  </div>
+  <div class="mdui-drawer mdui-drawer-close" id="function-choose">
+    <div class="mdui-list" mdui-collapse="{accordion: true}" style="margin-bottom: 76px;">
+      <div class="mdui-collapse-item ">
+        <a href="./">
+          <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
+            <i class="mdui-list-item-icon mdui-icon material-icons">near_me</i>
+            <div class="mdui-list-item-content">主页</div>
+          </div>
+        </a>
+
+        <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
+          <i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-blue">settings</i>
+          <div class="mdui-list-item-content">工具</div>
+          <i class="mdui-collapse-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
         </div>
-    </div>
-	</div>
-	<div class="mdui-container" style="margin-bottom: 80px">
-			<button class="mdui-btn mdui-btn-raised mdui-ripple mdui-color-theme-accent" id="input-but" onclick=javascrtpt:jump()>GO!</button>
-			<script>
-				function jump(){
-					document.location.href=`./UPMonitor/?uid=${document.getElementById('uid').value == '' ? 316381099 : document.getElementById('uid').value}&refresh-time=${document.getElementById('refresh-time').value == '' ? 10 : document.getElementById('refresh-time').value}`;
-				}
-			</script>
-
-	</div>
-<div class ="mdui-drawer mdui-drawer-close" id ="function-choose">
-  <div class="mdui-list" mdui-collapse="{accordion: true}" style="margin-bottom: 76px;">
-    <div class="mdui-collapse-item ">
-      <a href="./">
-				<div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
-					<i class="mdui-list-item-icon mdui-icon material-icons">near_me</i>
-					<div class="mdui-list-item-content">主页</div>
-				</div>
-			</a>
-
-      <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
-        <i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-blue">settings</i>
-        <div class="mdui-list-item-content">工具</div>
-        <i class="mdui-collapse-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
-      </div>
-      <div class="mdui-collapse-item-body mdui-list">
-        <a href="./UPMonitor/?uid=316381099&refresh-time=10" class="mdui-list-item mdui-ripple ">UP主监测器</a>
+        <div class="mdui-collapse-item-body mdui-list">
+          <a href="./UPMonitor/?uid=316381099&refresh-time=10" class="mdui-list-item mdui-ripple ">UP主监测器</a>
+        </div>
       </div>
     </div>
+    <a id="anchor-top"></a>
   </div>
-  <a id="anchor-top"></a>
-</div>
 
-<div class="mdui-container" style="margin-bottom: 80px;">
-  <h1 class="doc-title mdui-text-color-theme">关于</h1>
-  <h2 class="doc-title mdui-text-color-theme">简介</h2>
-  <div class="mdui-typo">
-    <p>这大约是当时鹿乃酱快要百万粉时的制作的</p>
-    <p>当时还是一个刚学了几天html的小白</p>
-    <p>不过现在也是啊XD</p>
+  <div class="mdui-container" style="margin-bottom: 80px;">
+    <h1 class="doc-title mdui-text-color-theme">关于</h1>
+    <h2 class="doc-title mdui-text-color-theme">简介</h2>
+    <div class="mdui-typo">
+      <p>这大约是当时鹿乃酱快要百万粉时的制作的</p>
+      <p>当时还是一个刚学了几天html的小白</p>
+      <p>不过现在也是啊XD</p>
+    </div>
+    <h2 class="doc-title mdui-text-color-theme">说明</h2>
+    <div class="mdui-typo">
+      <p>
+        本站采用
+        <a href="https://json2jsonp.com">
+          jsonp
+        </a>
+        来处理来自
+        <a href="https://www.bilibili.com/">bilibili</a>
+        的数据
+      </p>
+      <p>
+        请不要滥用本站，否则我将走投无路而关闭此项目
+      </p>
+      <p>
+        本站采用
+        <a href="https://www.mdui.org/">MDUI</a>
+        作为框架，欢迎访问其项目
+      </p>
+    </div>
+    <h2 class="doc-title mdui-text-color-theme">关于作者</h2>
+    <div class="mdui-typo">
+      <p>
+        一个初入前端的高一蒻蒟。（我和所有粉丝都和乃酱贴贴）
+      </p>
+    </div>
+    <h2 class="doc-title mdui-text-color-theme">啡咖の朋友们</h2>
+    <div class="mdui-typo">
+      <p>
+        <a href="https://space.bilibili.com/26147911">
+          涂山苏苏Official
+        </a>
+        ——你群大佬，在他(她)的帮助下实现了输入UID跳转的功能(阿里嘎多)
+      </p>
+      <p>
+        <a href="https://space.bilibili.com/178458693/">
+          Ink33
+        </a>
+        ——你群大佬，灵感来源XD
+      </p>
+      <p>
+        这个就不是友链了，这叫私货——
+        <a href="https://space.bilibili.com/316381099">
+          鹿乃ちゃん
+        </a>
+      </p>
+    </div>
+    <h2 class="doc-title mdui-text-color-theme">Changelog</h2>
+    <div class="mdui-typo">
+      <p>
+        2020.3.26 Created Project
+      </p>
+      <p>
+        2020.3.26 Refresh-time Changer
+      </p>
+      <p>
+        2020.4.15 New feature: You will monitor Kano if u did not fill the 'UID' column XD
+      </p>
+    </div>
+    <h2 class="doc-title mdui-text-color-theme">Coming Features</h2>
+    <div class="mdui-typo">
+      <p>
+        功能完善
+      </p>
+    </div>
   </div>
-  <h2 class="doc-title mdui-text-color-theme">说明</h2>
-  <div class="mdui-typo">
-    <p>
-      本站采用
-      <a href="https://json2jsonp.com">
-        jsonp
-      </a>
-      来处理来自
-      <a href="https://www.bilibili.com/">bilibili</a>
-      的数据
-    </p>
-    <p>
-      请不要滥用本站，否则我将走投无路而关闭此项目
-    </p>
-    <p>
-      本站采用
-      <a href="https://www.mdui.org/">MDUI</a>
-      作为框架，欢迎访问其项目
-    </p>
-  </div>
-  <h2 class="doc-title mdui-text-color-theme">关于作者</h2>
-  <div class="mdui-typo">
-    <p>
-      一个初入前端的高一蒻蒟。（我和所有粉丝都和乃酱贴贴）
-    </p>
-  </div>
-  <h2 class="doc-title mdui-text-color-theme">啡咖の朋友们</h2>
-  <div class="mdui-typo">
-    <p>
-      <a href="https://space.bilibili.com/26147911">
-        涂山苏苏Official
-      </a>
-      ——你群大佬，在他(她)的帮助下实现了输入UID跳转的功能(阿里嘎多)
-    </p>
-    <p>
-      <a href="https://space.bilibili.com/178458693/">
-        Ink33
-      </a>
-      ——你群大佬，灵感来源XD
-    </p>
-    <p>
-      这个就不是友链了，这叫私货——
-      <a href="https://space.bilibili.com/316381099">
-        鹿乃ちゃん
-      </a>
-    </p>
-  </div>
-  <h2 class="doc-title mdui-text-color-theme">Changelog</h2>
-  <div class="mdui-typo">
-    <p>
-      2020.3.26 Created Project
-    </p>
-    <p>
-      2020.3.26 Refresh-time Changer
-    </p>
-    <p>
-      2020.4.15 New feature: You will monitor Kano if u did not fill the 'UID' column XD
-    </p>
-  </div>
-  <h2 class="doc-title mdui-text-color-theme">Coming Features</h2>
-  <div class="mdui-typo">
-    <p>
-      功能完善
-    </p>
-  </div>
-</div>
-
 
 
-<script src="js/mdui.min.js"></script>
+
+  <script src="js/mdui.min.js"></script>
 </body>
+
 </html>
