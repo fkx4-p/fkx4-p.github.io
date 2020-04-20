@@ -37,7 +37,7 @@ let elScriptChild
 const appendScript = () => {
   const url = "https://json2jsonp.com/?url=https%3A%2F%2Fapi.bilibili.com%2Fx%2Fweb-interface%2Fcard%3Fmid%3D" + userID + '&spam=' + Number(new Date) + "&callback=showFansCount"//"https://jsonp.afeld.me/?callback=showFansCount&url=https%3A%2F%2Fapi.bilibili.com%2Fx%2Fweb-interface%2Fcard%3Fmid%3D"+userID+'&spam='+Number(new Date)
   elScriptChild = document.createElement('script')
-  elScriptChild.setAttribsute('src', url)
+  elScriptChild.setAttribute('src', url)
   elScript.appendChild(elScriptChild)
 }
 appendScript()
