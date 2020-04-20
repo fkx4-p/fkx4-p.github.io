@@ -55,3 +55,26 @@ const resize = () => {
 }
 resize()
 window.onresize = resize
+//Time from https://blog.csdn.net/HZR_497/java/article/details/92084546
+
+setInterval(function () {
+  let show_day = new Array('星期一', '星期二', '星期三', '星期四', '星期五', '星期六', '星期日');
+  let time = new Date();
+  let year = time.getFullYear();
+  let month = time.getMonth();
+  let date = time.getDate();
+  let day = time.getDay();
+  let hour = time.getHours();
+  let minutes = time.getMinutes();
+  let second = time.getSeconds();
+  month = month * 1 + 1;
+  month < 10 ? month = '0' + month : month;
+
+  hour < 10 ? hour = '0' + hour : hour;
+  minutes < 10 ? minutes = '0' + minutes : minutes;
+  second < 10 ? second = '0' + second : second;
+
+  //let now_time = year + '年' + month + '月' + date + '日' + ' ' + ' ' + hour + ':' + minutes + ':' + second + "  " + show_day[day - 1];
+  let now_time = year + '年' + month + '月' + date + '日' + ' ' + ' ' + hour + ':' + minutes + ':' + second + "  ";//不显示星期
+  document.getElementById('showtime').innerHTML = now_time;
+}, 1000);
