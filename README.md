@@ -18,7 +18,8 @@
 2020.3.26 Refresh-time Changer  
 2020.4.15 New feature: You will monitor Kano if u did not fill the 'UID' column XD  
 2020.4.20 Fixed avatars loading issues.  
-2020.4.21 Add a real-time date display. Create README.md
+2020.4.21 Add a real-time date display. Create README.md.
+2020.8.8 Kills the problem that the time display is toooooooo "small", now it is toooooooo big
 ## Coming Features
 1:更换数据接口  
 2:添加可更换主题
