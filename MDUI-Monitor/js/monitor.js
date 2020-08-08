@@ -35,7 +35,7 @@ function returnAvatar() {
 //get jsonp
 let elScriptChild
 const appendScript = () => {
-	const url = "https://wild-bonus-e3a8.ao3ffee.workers.dev/?callback=showFansCount&url=https%3A%2F%2Fapi.bilibili.com%2Fx%2Fweb-interface%2Fcard%3Fmid%3D" + userID + '&spam='+ Number(new Date)//"https://json2jsonp.com/?url=https%3A%2F%2Fapi.bilibili.com%2Fx%2Fweb-interface%2Fcard%3Fmid%3D" + userID + '&spam=' + Number(new Date) + "&callback=showFansCount"//"https://jsonp.afeld.me/?callback=showFansCount&url=https%3A%2F%2Fapi.bilibili.com%2Fx%2Fweb-interface%2Fcard%3Fmid%3D"+userID+'&spam='+Number(new Date)
+	const url = "https://wild-bonus-e3a8.ao3ffee.workers.dev/?callback=showFansCount&url=https%3A%2F%2Fapi.bilibili.com%2Fx%2Fweb-interface%2Fcard%3Fmid%3D" + userID//"https://json2jsonp.com/?url=https%3A%2F%2Fapi.bilibili.com%2Fx%2Fweb-interface%2Fcard%3Fmid%3D" + userID + '&spam=' + Number(new Date) + "&callback=showFansCount"//"https://jsonp.afeld.me/?callback=showFansCount&url=https%3A%2F%2Fapi.bilibili.com%2Fx%2Fweb-interface%2Fcard%3Fmid%3D"+userID+'&spam='+Number(new Date)
 	elScriptChild = document.createElement('script')
 	elScriptChild.setAttribute('src', url)
 	elScript.appendChild(elScriptChild)
