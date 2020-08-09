@@ -4,8 +4,8 @@
 当时还是一个刚学了几天html的小白  
 不过现在也是啊XD  
 ## 说明
-本站采用 [jsonp](https://json2jsonp.com) 处理来自 [Bilibili](https://www.bilibili.com/) 的数据  
-请不要滥用本站，否则我将~~走投无路~~而关闭此项目  
+本站采用 [jsonp](https://wild-bonus-e3a8.ao3ffee.workers.dev/) 处理来自 [Bilibili](https://www.bilibili.com/) 的数据  
+请不要滥用本站，否则我将因为jsonp调用次数问题，~~走投无路~~而关闭此项目  
 本站采用 [MDUI](https://www.mdui.org/) 作为框架，欢迎访问其项目  
 ## 关于作者
 一个初入前端的高一蒻蒟。（我和所有粉丝都和乃酱贴贴）  
