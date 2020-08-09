@@ -74,7 +74,7 @@ setInterval(function () {
 	minutes < 10 ? minutes = '0' + minutes : minutes;
 	second < 10 ? second = '0' + second : second;
 
-	let now_time = year + '年' + month + '月' + date + '日' + ' ' + ' ' + hour + ':' + minutes + ':' + second + "  " + show_day[day - 1];
-	// let now_time = year + '年' + month + '月' + date + '日' + ' ' + ' ' + hour + ':' + minutes + ':' + second + "  ";//不显示星期
+	// let now_time = year + '年' + month + '月' + date + '日' + ' ' + ' ' + hour + ':' + minutes + ':' + second + "  " + show_day[day - 1];
+	let now_time = year + '年' + month + '月' + date + '日' + ' ' + ' ' + hour + ':' + minutes + ':' + second + "  ";//不显示星期
 	document.getElementById('showtime').innerHTML = now_time;
 }, 1000);
