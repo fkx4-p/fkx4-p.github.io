@@ -12,7 +12,10 @@
 ## 啡咖の朋友们
 [涂山苏苏Official](https://github.com/TheresaQWQ) ——你群大佬，在他(她)的帮助下实现了输入UID跳转的功能(阿里嘎多)  
 [Ink33](https://github.com/Ink-33) ——你群大佬，灵感来源XD  
-这个就不是友链了，这叫私货—— [鹿乃ちゃん](https://space.bilibili.com/316381099)
+这个就不是友链了，这叫私货—— [鹿乃ちゃん](https://space.bilibili.com/316381099)  
+## 项目地址  
+FFEE_CO: [https://github.com/fkx4-p/fkx4-p.github.io/](https://github.com/fkx4-p/fkx4-p.github.io/)  
+Ink33: [https://github.com/Ink-33/FansMonitor-HTML/](https://github.com/Ink-33/FansMonitor-HTML/)
 ## Changelog
 2020.3.26 Created Project  
 2020.3.26 Refresh-time Changer  
