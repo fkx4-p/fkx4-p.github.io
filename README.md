@@ -26,7 +26,9 @@ Ink33: [https://github.com/Ink-33/FansMonitor-HTML/](https://github.com/Ink-33/F
 2020.8.8 Changed the jsontojsonp api  
 2020.8.9 Finally fixed the problem that cause GET requests receiving 403  
 2020.8.9 We deleted the spam parameter, which was used to avoid being killed by the origin. Yayyy!  
-2020.8.11 Switched the position of some cards, added day display!
+2020.8.11 Switched the position of some cards, added day display!  
+2020.8.13 Reorganized desktop page
 ## Coming Features
 1:更换数据接口  
-2:添加可更换主题
+2:添加可更换主题  
+3:(Critical)UI检测&跳转

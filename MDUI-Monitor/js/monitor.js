@@ -47,16 +47,7 @@ const getData = () => {
 	appendScript()
 }
 window.setInterval(getData, cloc)
-//font size and stuff
-const resize = () => {
-	elFans.style.fontSize = document.getElementById('main').clientWidth * 0.03 + 'px'
-	elName.style.fontSize = document.getElementById('main').clientWidth * 0.03 + 'px'
-	elMid.style.fontSize = document.getElementById('main').clientWidth * 0.03 + 'px'
-}
-resize()
-window.onresize = resize
-//Time from https://blog.csdn.net/HZR_497/java/article/details/92084546
-
+//Time Display
 setInterval(function () {
 	let show_day = new Array('星期一', '星期二', '星期三', '星期四', '星期五', '星期六', '星期日');
 	let time = new Date();
