@@ -10,7 +10,7 @@
 ## 关于作者
 一个初入前端的高一蒻蒟。（我和所有粉丝都和乃酱贴贴）  
 ## 啡咖の朋友们
-[涂山苏苏Official](https://github.com/TheresaQWQ) ——你群大佬，在他(她)的帮助下实现了输入UID跳转的功能(阿里嘎多)  
+[涂山苏苏Official](https://github.com/TheresaQWQ) ——你群大佬，在他的帮助下实现了输入UID跳转的功能(阿里嘎多)  
 [Ink33](https://github.com/Ink-33) ——你群大佬，灵感来源XD  
 这个就不是友链了，这叫私货—— [鹿乃ちゃん](https://space.bilibili.com/316381099)  
 ## 项目地址  
@@ -27,7 +27,8 @@ Ink33: [https://github.com/Ink-33/FansMonitor-HTML/](https://github.com/Ink-33/F
 2020.8.9 Finally fixed the problem that cause GET requests receiving 403  
 2020.8.9 We deleted the spam parameter, which was used to avoid being killed by the origin. Yayyy!  
 2020.8.11 Switched the position of some cards, added day display!  
-2020.8.13 Reorganized desktop page
+2020.8.13 Reorganized desktop page  
+2020.9.5 Added Nonono's memorial page
 ## Coming Features
 1:更换数据接口  
 2:添加可更换主题  
